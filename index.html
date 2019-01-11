@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Web App</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+<body>
+
+
+  <div class="container">
+
+    <div class="header">
+      <div class="header__logo">
+        <h1>YourApp&trade;</h1>
+      </div>
+      <div class="header__nav">
+        <div class="header__nav-icon-box">
+          <img src="icons/icon-bell.svg">
+          <span class="dot"></span>
+          <ul class="notifications">
+            <li class="notifications__box">
+              5 new messages
+              <span id="close">X</span>
+            </li>
+            <li class="notifications__box">
+              1 liked photo
+              <span id="close">X</span>
+            </li>
+            <li class="notifications__box">
+              3 new comments
+              <span id="close">X</span>
+            </li>
+          </ul>
+        </div>
+        <div class="header__nav-user-box">
+          <img src="images/member-2.jpg">
+          <span>Josh Sullivan</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="sidebar">
+      <div class="sidebar__icons">
+        <img src="icons/icon-dashboard.svg" alt="icon 1">
+        <img src="icons/icon-members.svg" alt="icon 2">
+        <img src="icons/icon-visits.svg" alt="icon 3">
+        <img src="icons/icon-settings.svg" alt="icon 4">
+      </div>
+    </div>
+
+    <div class="dashboard">
+      <h2>Dashboard</h2>
+      <div class="dashboard__search">
+        <input type="search" name="search" placeholder="Search">
+        <span><i class="fas fa-search"></i></span>
+      </div>
+    </div>
+
+    <div class="notification">
+        <div class="notification__box">
+          <span class="alert"><strong>Alert</strong></span>
+          <span class="message">Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat. velit essecillum dolore eu fugiat</span>
+          <span id="close">X</span>
+        </div>
+      </div>
+
+    <div class="traffic">
+      <h3>Traffic</h3>
+      <div class="traffic__line-chart">
+        <div class="traffic__line-chart-buttons">
+          <button class="btn-time hourBtn">Hourly</button>
+          <button class="btn-time dailyBtn">Daily</button>
+          <button class="btn-time weekBtn">Weekly</button>
+          <button class="btn-time monthBtn highlight">Monthly</button>
+        </div>
+        <div class="traffic__line-chart">
+          <canvas id="lineChart"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <div class="daily-traffic">
+      <h3>Daily Traffic</h3>
+      <div class="daily-traffic__bar-chart">
+        <canvas id="barChart"></canvas>
+      </div>
+    </div>
+
+    <div class="mobile-users">
+      <h3>Mobile Users</h3>
+      <div class="mobile-users__doughnut">
+        <canvas id="doughnutChart"></canvas>
+      </div>
+    </div>
+
+    <div class="social-stats">
+      <h3>Social Stats</h3>
+      <div class="social-stats__box">
+        <div class="social-stats__flex">
+          <img src="icons/icon-twitter.svg" alt="twitter icon" class="social-stats__logo">
+          <div class="social-stats__text">
+            <p class="social-stats-word">Twitter</p>
+            <p class="social-stats-stat">10,345</p>
+          </div>
+        </div>
+      </div>
+      <div class="social-stats__box">
+        <div class="social-stats__flex">
+          <img src="icons/icon-facebook.svg" alt="facebook icon" class="social-stats__logo">
+          <div class="social-stats__text">
+            <p class="social-stats-word">Facebook</p>
+            <p class="social-stats-stat">8,739</p>
+          </div>
+        </div>
+      </div>
+      <div class="social-stats__box">
+        <div class="social-stats__flex">
+          <img src="icons/icon-google-plus.svg" alt="google plus icon" class="social-stats__logo">
+          <div class="social-stats__text">
+            <p class="social-stats-word">Google +</p>
+            <p class="social-stats-stat">2,530</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="new-members">
+      <h3>New Members</h3>
+      <div class="new-members__box">
+        <img src="images/member-1.jpg" alt='member 1'>
+        <div class="new-members__text">
+          <p class="new-members-name">Victoria Chambers</p>
+          <p class="new-members-email">victoria@example.com</p>
+          <span class="new-members__date">10/25/18</span>
+        </div>
+      </div>
+      <div class="new-members__box">
+        <img src="images/member-2.jpg" alt='member 2'>
+        <div class="new-members__text">
+          <p class="new-members-name">Matthew Barret</p>
+          <p class="new-members-email">matthew@example.com</p>
+          <span>10/25/18</span>
+        </div>
+      </div>
+      <div class="new-members__box">
+        <img src="images/member-3.jpg" alt='member 3'>
+        <div class="new-members__text">
+          <p class="new-members-name">Judy Wood</p>
+          <p class="new-members-email">judy@example.com</p>
+          <span>10/25/18</span>
+        </div>
+      </div>
+      <div class="new-members__box">
+        <img src="images/member-4.jpg" alt='member 4'>
+        <div class="new-members__text">
+          <p class="new-members-name">Peter Sexton</p>
+          <p class="new-members-email">peter@example.com</p>
+          <span>10/25/18</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="recent-activity">
+      <h3>Recent Activity</h3>
+      <div class="recent-activity__box">
+        <img src="images/member-4.jpg" alt='member 4' class="user-img">
+        <div class="recent-activity__text">
+          <p class="recent-activity-name">Peter Sexton</p>
+          <p class="recent-activity-time">4 hours ago</p>
+        </div>
+        <img src="images/next.png" class="arrow">
+      </div>
+      <div class="recent-activity__box">
+        <img src="images/member-3.jpg" alt='member 3' class="user-img">
+        <div class="recent-activity__text">
+          <p class="recent-activity-name">Judy Wood</p>
+          <p class="recent-activity-time">6 hours ago</p>
+        </div>
+        <img src="images/next.png" class="arrow">
+      </div>
+      <div class="recent-activity__box">
+        <img src="images/member-2.jpg" alt='member 2' class="user-img">
+        <div class="recent-activity__text">
+          <p class="recent-activity-name">Matthew Barret</p>
+          <p class="recent-activity-time">1 day ago</p>
+        </div>
+        <img src="images/next.png" class="arrow">
+      </div>
+      <div class="recent-activity__box">
+        <img src="images/member-1.jpg" alt='member 1' class="user-img">
+        <div class="recent-activity__text">
+          <p class="recent-activity-name">Victoria Chambers</p>
+          <p class="recent-activity-time">2 days ago</p>
+      </div>
+        <img src="images/next.png" class="arrow">
+      </div>
+    </div>
+
+    <div class="user-messages">
+      <h3>Message User</h3>
+      <form>
+        <input type="search" name="search-user" placeholder="Search for User" class="search-user">
+        <textarea name="message" placeholder="Message User" class="msg-user"></textarea>
+        <input type="submit" value="Send" class="send-btn">
+      </form>
+    </div>
+
+    <div class="settings">
+      <h3>Settings</h3>
+        <div class="settings-widgets">
+          <div class="settings-widgets--email">
+            <span>Send Email Notifications</span>
+            <label class="recent-activity__switch">
+              <input type="checkbox">
+              <span class="slider round"></span>
+            </label>
+          </div>
+          <div class="settings-widgets--profile">
+            <span>Set Profile to Public</span>
+            <label class="recent-activity__switch">
+              <input type="checkbox">
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </div>
+      <select name="timezone" class="recent-activity__select">
+                 <option></option>
+                 <option value="Etc/GMT+12">(GMT-12:00) International Date Line West</option>
+                 <option value="Pacific/Midway">(GMT-11:00) Midway Island, Samoa</option>
+                 <option value="Pacific/Honolulu">(GMT-10:00) Hawaii</option>
+                 <option value="US/Alaska">(GMT-09:00) Alaska</option>
+                 <option value="America/Los_Angeles">(GMT-08:00) Pacific Time (US & Canada)</option>
+                 <option value="America/Tijuana">(GMT-08:00) Tijuana, Baja California</option>
+                 <option value="US/Arizona">(GMT-07:00) Arizona</option>
+                 <option value="America/Chihuahua">(GMT-07:00) Chihuahua, La Paz, Mazatlan</option>
+                 <option value="US/Mountain">(GMT-07:00) Mountain Time (US & Canada)</option>
+                 <option value="America/Managua">(GMT-06:00) Central America</option>
+                 <option value="US/Central">(GMT-06:00) Central Time (US & Canada)</option>
+                 <option value="America/Mexico_City">(GMT-06:00) Guadalajara, Mexico City, Monterrey</option>
+                 <option value="Canada/Saskatchewan">(GMT-06:00) Saskatchewan</option>
+                 <option value="America/Bogota">(GMT-05:00) Bogota, Lima, Quito, Rio Branco</option>
+                 <option value="US/Eastern">(GMT-05:00) Eastern Time (US & Canada)</option>
+                 <option value="US/East-Indiana">(GMT-05:00) Indiana (East)</option>
+                 <option value="Canada/Atlantic">(GMT-04:00) Atlantic Time (Canada)</option>
+                 <option value="America/Caracas">(GMT-04:00) Caracas, La Paz</option>
+                 <option value="America/Manaus">(GMT-04:00) Manaus</option>
+                 <option value="America/Santiago">(GMT-04:00) Santiago</option>
+                 <option value="Canada/Newfoundland">(GMT-03:30) Newfoundland</option>
+                 <option value="America/Sao_Paulo">(GMT-03:00) Brasilia</option>
+                 <option value="America/Argentina/Buenos_Aires">(GMT-03:00) Buenos Aires, Georgetown</option>
+                 <option value="America/Godthab">(GMT-03:00) Greenland</option>
+                 <option value="America/Montevideo">(GMT-03:00) Montevideo</option>
+                 <option value="America/Noronha">(GMT-02:00) Mid-Atlantic</option>
+                 <option value="Atlantic/Cape_Verde">(GMT-01:00) Cape Verde Is.</option>
+                 <option value="Atlantic/Azores">(GMT-01:00) Azores</option>
+                 <option value="Africa/Casablanca">(GMT+00:00) Casablanca, Monrovia, Reykjavik</option>
+                 <option value="Etc/Greenwich">(GMT+00:00) Greenwich Mean Time : Dublin, Edinburgh, Lisbon, London</option>
+                 <option value="Europe/Amsterdam">(GMT+01:00) Amsterdam, Berlin, Bern, Rome, Stockholm, Vienna</option>
+                 <option value="Europe/Belgrade">(GMT+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague</option>
+                 <option value="Europe/Brussels">(GMT+01:00) Brussels, Copenhagen, Madrid, Paris</option>
+                 <option value="Europe/Sarajevo">(GMT+01:00) Sarajevo, Skopje, Warsaw, Zagreb</option>
+                 <option value="Africa/Lagos">(GMT+01:00) West Central Africa</option>
+                 <option value="Asia/Amman">(GMT+02:00) Amman</option>
+                 <option value="Europe/Athens">(GMT+02:00) Athens, Bucharest, Istanbul</option>
+                 <option value="Asia/Beirut">(GMT+02:00) Beirut</option>
+                 <option value="Africa/Cairo">(GMT+02:00) Cairo</option>
+                 <option value="Africa/Harare">(GMT+02:00) Harare, Pretoria</option>
+                 <option value="Europe/Helsinki">(GMT+02:00) Helsinki, Kyiv, Riga, Sofia, Tallinn, Vilnius</option>
+                 <option value="Asia/Jerusalem">(GMT+02:00) Jerusalem</option>
+                 <option value="Europe/Minsk">(GMT+02:00) Minsk</option>
+                 <option value="Africa/Windhoek">(GMT+02:00) Windhoek</option>
+                 <option value="Asia/Kuwait">(GMT+03:00) Kuwait, Riyadh, Baghdad</option>
+                 <option value="Europe/Moscow">(GMT+03:00) Moscow, St. Petersburg, Volgograd</option>
+                 <option value="Africa/Nairobi">(GMT+03:00) Nairobi</option>
+                 <option value="Asia/Tbilisi">(GMT+03:00) Tbilisi</option>
+                 <option value="Asia/Tehran">(GMT+03:30) Tehran</option>
+                 <option value="Asia/Muscat">(GMT+04:00) Abu Dhabi, Muscat</option>
+                 <option value="Asia/Baku">(GMT+04:00) Baku</option>
+                 <option value="Asia/Yerevan">(GMT+04:00) Yerevan</option>
+                 <option value="Asia/Kabul">(GMT+04:30) Kabul</option>
+                 <option value="Asia/Yekaterinburg">(GMT+05:00) Yekaterinburg</option>
+                 <option value="Asia/Karachi">(GMT+05:00) Islamabad, Karachi, Tashkent</option>
+                 <option value="Asia/Calcutta">(GMT+05:30) Chennai, Kolkata, Mumbai, New Delhi</option>
+                 <option value="Asia/Calcutta">(GMT+05:30) Sri Jayawardenapura</option>
+                 <option value="Asia/Katmandu">(GMT+05:45) Kathmandu</option>
+                 <option value="Asia/Almaty">(GMT+06:00) Almaty, Novosibirsk</option>
+                 <option value="Asia/Dhaka">(GMT+06:00) Astana, Dhaka</option>
+                 <option value="Asia/Rangoon">(GMT+06:30) Yangon (Rangoon)</option>
+                 <option value="Asia/Bangkok">(GMT+07:00) Bangkok, Hanoi, Jakarta</option>
+                 <option value="Asia/Krasnoyarsk">(GMT+07:00) Krasnoyarsk</option>
+                 <option value="Asia/Hong_Kong">(GMT+08:00) Beijing, Chongqing, Hong Kong, Urumqi</option>
+                 <option value="Asia/Kuala_Lumpur">(GMT+08:00) Kuala Lumpur, Singapore</option>
+                 <option value="Asia/Irkutsk">(GMT+08:00) Irkutsk, Ulaan Bataar</option>
+                 <option value="Australia/Perth">(GMT+08:00) Perth</option>
+                 <option value="Asia/Taipei">(GMT+08:00) Taipei</option>
+                 <option value="Asia/Tokyo">(GMT+09:00) Osaka, Sapporo, Tokyo</option>
+                 <option value="Asia/Seoul">(GMT+09:00) Seoul</option>
+                 <option value="Asia/Yakutsk">(GMT+09:00) Yakutsk</option>
+                 <option value="Australia/Adelaide">(GMT+09:30) Adelaide</option>
+                 <option value="Australia/Darwin">(GMT+09:30) Darwin</option>
+                 <option value="Australia/Brisbane">(GMT+10:00) Brisbane</option>
+                 <option value="Australia/Canberra">(GMT+10:00) Canberra, Melbourne, Sydney</option>
+                 <option value="Australia/Hobart">(GMT+10:00) Hobart</option>
+                 <option value="Pacific/Guam">(GMT+10:00) Guam, Port Moresby</option>
+                 <option value="Asia/Vladivostok">(GMT+10:00) Vladivostok</option>
+                 <option value="Asia/Magadan">(GMT+11:00) Magadan, Solomon Is., New Caledonia</option>
+                 <option value="Pacific/Auckland">(GMT+12:00) Auckland, Wellington</option>
+                 <option value="Pacific/Fiji">(GMT+12:00) Fiji, Kamchatka, Marshall Is.</option>
+                 <option value="Pacific/Tongatapu">(GMT+13:00) Nuku'alofa</option>
+      </select>
+      <div class="settings-btn-box">
+        <button class="btn-save">Save</button>
+        <button class="btn-cancel">Cancel</button>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js"></script>
+  <script src="js/app.js"></script>
+
+
+</body>
+</html>

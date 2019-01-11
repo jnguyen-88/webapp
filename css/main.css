@@ -1,0 +1,93 @@
+/*
+Error: Invalid CSS after "...ia (min-width: ": expected expression (e.g. 1px, bold), was ")"
+        on line 529 of scss/components/_layout.scss
+        from line 3 of scss/components/_index.scss
+        from line 3 of scss/main.scss
+
+524: 
+525: // =============
+526: // Media Queries
+527: // =============
+528: 
+529: @media (min-width: )
+
+Backtrace:
+scss/components/_layout.scss:529
+scss/components/_index.scss:3
+scss/main.scss:3
+/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:1278:in `expected'
+/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/script/lexer.rb:231:in `expected!'
+/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/script/parser.rb:724:in `assert_expr'
+/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/script/parser.rb:68:in `parse'
+/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:1134:in `sass_script'
+/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:485:in `query_expr'
+/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:460:in `media_query'
+/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:426:in `media_query_list'
+/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:1186:in `expr!'
+/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:421:in `media_directive'
+/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:234:in `special_directive'
+/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:209:in `directive'
+/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:696:in `block_child'
+/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:689:in `block_contents'
+/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:137:in `stylesheet'
+/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:41:in `parse'
+/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/engine.rb:414:in `_to_tree'
+/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/engine.rb:321:in `to_tree'
+/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:323:in `block in visit_import'
+/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/stack.rb:88:in `block in with_import'
+/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/stack.rb:135:in `with_frame'
+/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/stack.rb:88:in `with_import'
+/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:322:in `visit_import'
+/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/stack.rb:79:in `block in with_base'
+/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/stack.rb:135:in `with_frame'
+/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/stack.rb:79:in `with_base'
+/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:325:in `block (2 levels) in visit_import'
+/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:325:in `map'
+/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:325:in `block in visit_import'
+/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/stack.rb:88:in `block in with_import'
+/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/stack.rb:135:in `with_frame'
+/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/stack.rb:88:in `with_import'
+/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:322:in `visit_import'
+/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/stack.rb:79:in `block in with_base'
+/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/stack.rb:135:in `with_frame'
+/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/stack.rb:79:in `with_base'
+/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
+/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/plugin/compiler.rb:320:in `block in watch'
+/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
+/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
+/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
+/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
+/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
+/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
+/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
+/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...ia (min-width: \": expected expression (e.g. 1px, bold), was \")\"\A         on line 529 of scss/components/_layout.scss\A         from line 3 of scss/components/_index.scss\A         from line 3 of scss/main.scss\A \A 524: \A 525: // =============\A 526: // Media Queries\A 527: // =============\A 528: \A 529: @media (min-width: )"; }
