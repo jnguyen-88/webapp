@@ -48,6 +48,7 @@ Notifications
   &__box:hover {
     background-color: $color-primary-dark;
     color: #fff;
+    cursor: pointer;
   }
 }
 
@@ -59,7 +60,7 @@ Close Btn
   float: right;
   display: inline-block;
   cursor: pointer; 
-  color: #fff;
+  color: inherit;
 }
 
 /* ===================
@@ -188,9 +189,9 @@ Close Btn
 
     & input {
       width: 100%;
+      height: 3rem;
       -webkit-appearance: none;
       background-color: $color-light-grey-1;
-      height: 3rem;
       border: 1px inset $color-light-grey-2;
       outline: none;
       border-radius: 10px;
@@ -208,7 +209,7 @@ Close Btn
 .traffic {
   display: flex;
   flex-direction: column;
-  border-bottom: 1px solid $color-light-grey-1;
+  border-bottom: 2px solid $color-light-grey-1;
 
   grid-area: traffic;
 
@@ -242,7 +243,7 @@ Close Btn
 
 .daily-traffic {
   grid-area: daily-traffic;
-  margin: .6rem 0;
+  padding: .6rem 0;
   border-bottom: 1.5px solid $color-light-grey-1;
 
   display: flex;
@@ -264,7 +265,7 @@ Close Btn
 .mobile-users {
   grid-area: mobile-users;
   width: 100%;
-  margin: .6rem auto;
+  padding: .6rem 1rem;
   border-bottom: 1.5px solid $color-light-grey-1;
   padding-bottom: 2rem;
 
@@ -274,6 +275,12 @@ Close Btn
 
 }
 
+.social-stats__boxes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .social-stats {
   grid-area: social-stats;
   margin: .6rem 0;
@@ -281,7 +288,7 @@ Close Btn
 
   display: flex;
   flex-direction: column;
-  align-items: center;
+
 
   & h3 {
     text-align: center;
@@ -299,6 +306,9 @@ Close Btn
   &__flex {
     display: flex;
     align-items: center;
+
+    width: 50%;
+    margin: 0 auto;
 
     & img {
       background-color: $color-primary;
@@ -514,15 +524,145 @@ Close Btn
   background-color: $color-primary;
   margin: 0 auto;
   padding: 0 15px;
-  border-radius: 10px;
+  border-radius: 5px;
 
 
   &__box {
     display: flex;
     justify-content: space-between;
-    color: green;
+    color: #fff;
+  }
+
+  & .message {
+    font-size: 13px;
+    margin-left: 5px;
   }
 }
+
+//Media Query 
+
+@media (min-width:768px) {
+
+  .container {
+    grid-template-areas:
+      'header header header'
+      'sidebar dashboard dashboard'
+      'sidebar notification notification'
+      'sidebar traffic traffic'
+      'sidebar daily-traffic mobile-users'
+      'sidebar social-stats social-stats'
+      'sidebar new-members new-members'
+      'sidebar recent-activity recent-activity'
+      'sidebar user-messages user-messages'
+      'sidebar settings settings'
+    ;
+  }
+
+  .sidebar__icons {
+    flex-direction: column;
+    align-items: center;
+
+    & img {
+      margin-top: 1rem;
+      width: 40px;
+      height: 58px;
+    }
+  }
+
+  .dashboard {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-areas: 
+      'heading search'
+    ;
+
+    & h2 {
+      grid-area: heading;
+    }
+
+    & span {
+      position: absolute;
+      top: 21px;
+      right: 30px;
+    }
+
+    &__search {
+      grid-area: search;
+      background-color: $color-light-grey-2;
+      width: 100%;
+      padding-right: 1rem;
+
+      display: flex;
+      align-items: center;
+
+      & input {
+        width: 50%;
+        height: 2.5rem;
+        margin-left: auto;
+      }
+    }
+  }
+
+  .notification {
+    width: 97%;
+    margin-top: 10px;
+  }
+
+  .daily-traffic h3 {
+    width: 80%;
+    text-align: left;
+    margin: 0 auto;
+  }
+
+  .mobile-users {
+    border-left: 2px solid $color-light-grey-1;
+
+    & h3 {
+      text-align: left;
+    }
+
+    &__doughnut {
+      position: relative; 
+      height: 100%; 
+      width: 420px;
+      margin-top: .6rem;
+    }
+  }
+
+  .social-stats {
+    flex-direction: column;
+
+    & h3 {
+      width: 80%;
+      text-align: left;
+      margin: 0 auto;
+    }
+
+    &__flex {
+      width: 280px;
+    }
+
+    &__box {
+      margin: .5rem 2rem;
+      flex: 1;
+    }
+  }
+
+  .social-stats__boxes {
+    flex-direction: row;
+
+    width: 95%;
+    margin: 0 auto;
+  }
+
+}
+
+
+
+
+
+
+
 
 
  

@@ -1,93 +1,564 @@
-/*
-Error: Invalid CSS after "...ia (min-width: ": expected expression (e.g. 1px, bold), was ")"
-        on line 529 of scss/components/_layout.scss
-        from line 3 of scss/components/_index.scss
-        from line 3 of scss/main.scss
+/* =================
+  Colors
+ =================== */
+button {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  font-size: 12px;
+  min-width: 80px;
+  cursor: pointer; }
 
-524: 
-525: // =============
-526: // Media Queries
-527: // =============
-528: 
-529: @media (min-width: )
+.btn-time {
+  background-color: transparent;
+  border-radius: 10px;
+  height: 20px;
+  cursor: pointer;
+  transition: all .2s; }
 
-Backtrace:
-scss/components/_layout.scss:529
-scss/components/_index.scss:3
-scss/main.scss:3
-/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:1278:in `expected'
-/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/script/lexer.rb:231:in `expected!'
-/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/script/parser.rb:724:in `assert_expr'
-/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/script/parser.rb:68:in `parse'
-/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:1134:in `sass_script'
-/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:485:in `query_expr'
-/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:460:in `media_query'
-/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:426:in `media_query_list'
-/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:1186:in `expr!'
-/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:421:in `media_directive'
-/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:234:in `special_directive'
-/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:209:in `directive'
-/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:696:in `block_child'
-/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:689:in `block_contents'
-/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:137:in `stylesheet'
-/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:41:in `parse'
-/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/engine.rb:414:in `_to_tree'
-/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/engine.rb:321:in `to_tree'
-/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:323:in `block in visit_import'
-/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/stack.rb:88:in `block in with_import'
-/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/stack.rb:135:in `with_frame'
-/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/stack.rb:88:in `with_import'
-/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:322:in `visit_import'
-/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/stack.rb:79:in `block in with_base'
-/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/stack.rb:135:in `with_frame'
-/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/stack.rb:79:in `with_base'
-/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:325:in `block (2 levels) in visit_import'
-/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:325:in `map'
-/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:325:in `block in visit_import'
-/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/stack.rb:88:in `block in with_import'
-/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/stack.rb:135:in `with_frame'
-/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/stack.rb:88:in `with_import'
-/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:322:in `visit_import'
-/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/stack.rb:79:in `block in with_base'
-/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/stack.rb:135:in `with_frame'
-/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/stack.rb:79:in `with_base'
-/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/base.rb:52:in `map'
-/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:157:in `visit'
-/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:10:in `visit'
-/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/engine.rb:307:in `render_with_sourcemap'
-/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
-/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/plugin/compiler.rb:209:in `each'
-/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
-/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/plugin/compiler.rb:320:in `block in watch'
-/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
-/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
-/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
-/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
-/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
-/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
-/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
-/Users/Justin/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"...ia (min-width: \": expected expression (e.g. 1px, bold), was \")\"\A         on line 529 of scss/components/_layout.scss\A         from line 3 of scss/components/_index.scss\A         from line 3 of scss/main.scss\A \A 524: \A 525: // =============\A 526: // Media Queries\A 527: // =============\A 528: \A 529: @media (min-width: )"; }
+.highlight,
+.btn-time:hover {
+  background-color: #49D171;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  height: 20px; }
+
+/* The switch - the box around the slider */
+.recent-activity__switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  outline: none;
+  margin-left: auto; }
+
+/* Hide default HTML checkbox */
+.recent-activity__switch input {
+  opacity: 0;
+  width: 0;
+  height: 0; }
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s; }
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s; }
+
+input:checked + .slider {
+  background-color: #2196F3; }
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3; }
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px); }
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px; }
+
+.slider.round:before {
+  border-radius: 50%; }
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-30px);
+    opacity: 0; }
+  80% {
+    opacity: 50%; }
+  100% {
+    transform: translateY(0px); } }
+
+@keyframes shake {
+  0% {
+    -webkit-transform: rotateZ(0); }
+  1% {
+    -webkit-transform: rotateZ(30deg); }
+  3% {
+    -webkit-transform: rotateZ(-28deg); }
+  5% {
+    -webkit-transform: rotateZ(34deg); }
+  7% {
+    -webkit-transform: rotateZ(-32deg); }
+  9% {
+    -webkit-transform: rotateZ(30deg); }
+  11% {
+    -webkit-transform: rotateZ(-28deg); }
+  13% {
+    -webkit-transform: rotateZ(26deg); }
+  15% {
+    -webkit-transform: rotateZ(-24deg); }
+  17% {
+    -webkit-transform: rotateZ(22deg); }
+  19% {
+    -webkit-transform: rotateZ(-20deg); }
+  21% {
+    -webkit-transform: rotateZ(18deg); }
+  23% {
+    -webkit-transform: rotateZ(-16deg); }
+  25% {
+    -webkit-transform: rotateZ(14deg); }
+  27% {
+    -webkit-transform: rotateZ(-12deg); }
+  29% {
+    -webkit-transform: rotateZ(10deg); }
+  31% {
+    -webkit-transform: rotateZ(-8deg); }
+  33% {
+    -webkit-transform: rotateZ(6deg); }
+  35% {
+    -webkit-transform: rotateZ(-4deg); }
+  37% {
+    -webkit-transform: rotateZ(2deg); }
+  39% {
+    -webkit-transform: rotateZ(-1deg); }
+  41% {
+    -webkit-transform: rotateZ(1deg); }
+  43% {
+    -webkit-transform: rotateZ(0); }
+  100% {
+    -webkit-transform: rotateZ(0); } }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 1px; }
+
+/* ===========
+Dot 
+============ */
+.dot {
+  position: absolute;
+  bottom: 1.4rem;
+  left: 1.12rem;
+  margin-left: 3px;
+  height: 10px;
+  width: 10px;
+  background-color: #49D171;
+  border-radius: 50%; }
+
+/* ===========
+Notifications
+============ */
+.notifications {
+  width: 10rem;
+  height: auto;
+  background-color: #f4f4f4; }
+  .notifications > * {
+    padding: 10px; }
+  .notifications__box {
+    display: flex;
+    justify-content: space-between;
+    color: #4F449C;
+    transition: all .2s; }
+  .notifications__box:hover {
+    background-color: #4F449C;
+    color: #fff;
+    cursor: pointer; }
+
+/* ===========
+Close Btn
+============ */
+#close {
+  float: right;
+  display: inline-block;
+  cursor: pointer;
+  color: inherit; }
+
+/* ===================
+
+  ===================== */
+.container {
+  padding-bottom: 3rem;
+  display: grid;
+  grid-template-columns: 10% 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: 'header header header' 'sidebar sidebar sidebar' 'dashboard dashboard dashboard' 'notification notification notification' 'traffic traffic traffic' 'daily-traffic daily-traffic daily-traffic' 'mobile-users mobile-users mobile-users' 'social-stats social-stats social-stats' 'new-members new-members new-members' 'recent-activity recent-activity recent-activity' 'user-messages user-messages user-messages' 'settings settings settings'; }
+
+.header {
+  padding: 1rem 1rem;
+  background-color: #8f81e8;
+  color: #fff;
+  display: flex;
+  grid-area: header; }
+  .header__nav {
+    margin-left: auto;
+    display: flex;
+    align-items: center; }
+    .header__nav-icon-box {
+      position: relative; }
+    .header__nav-icon-box .notifications {
+      display: none;
+      position: absolute;
+      top: 25px;
+      right: 35px;
+      z-index: 105; }
+    .header__nav-icon-box img {
+      width: 25px;
+      height: 25px;
+      margin-right: 20px;
+      cursor: pointer; }
+    .header__nav-icon-box img:hover {
+      animation: shake 1s 3; }
+    .header__nav-user-box {
+      display: flex;
+      align-items: center;
+      border-left: 1px solid #686a6d; }
+    .header__nav-user-box img {
+      border-radius: 50%;
+      height: 50px;
+      width: 50px;
+      margin-left: .8rem; }
+    .header__nav-user-box span {
+      margin-left: .5rem; }
+
+.sidebar {
+  background-color: #4F449C;
+  position: relative;
+  grid-area: sidebar; }
+  .sidebar__icons {
+    display: flex;
+    justify-content: space-around;
+    align-content: center; }
+  .sidebar__icons img {
+    width: 30px;
+    height: 50px;
+    cursor: pointer; }
+
+.dashboard {
+  grid-area: dashboard;
+  position: relative;
+  display: flex;
+  flex-direction: column; }
+  .dashboard h2 {
+    padding: 1rem;
+    text-align: center; }
+  .dashboard__search {
+    position: relative;
+    display: inline-block;
+    width: 90%;
+    margin: 0 auto; }
+    .dashboard__search input {
+      width: 100%;
+      height: 3rem;
+      -webkit-appearance: none;
+      background-color: #f4f4f4;
+      border: 1px inset #e5e5e5;
+      outline: none;
+      border-radius: 10px;
+      padding: 15px; }
+    .dashboard__search span {
+      position: absolute;
+      top: 12px;
+      right: 20px; }
+
+.traffic {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 2px solid #f4f4f4;
+  grid-area: traffic; }
+  .traffic h3 {
+    padding: 1rem;
+    text-align: center; }
+  .traffic__line-chart {
+    position: relative;
+    height: 40vh;
+    width: 80vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .traffic__line-chart-buttons {
+      display: flex;
+      justify-content: space-between; }
+    .traffic__line-chart-buttons button {
+      margin: .5rem; }
+
+.daily-traffic {
+  grid-area: daily-traffic;
+  padding: .6rem 0;
+  border-bottom: 1.5px solid #f4f4f4;
+  display: flex;
+  flex-direction: column; }
+  .daily-traffic h3 {
+    text-align: center; }
+  .daily-traffic__bar-chart {
+    position: relative;
+    height: 40%;
+    width: 80%;
+    margin: 0 auto; }
+
+.mobile-users {
+  grid-area: mobile-users;
+  width: 100%;
+  padding: .6rem 1rem;
+  border-bottom: 1.5px solid #f4f4f4;
+  padding-bottom: 2rem; }
+  .mobile-users h3 {
+    margin-left: .9rem; }
+
+.social-stats__boxes {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.social-stats {
+  grid-area: social-stats;
+  margin: .6rem 0;
+  border-bottom: 1.5px solid #f4f4f4;
+  display: flex;
+  flex-direction: column; }
+  .social-stats h3 {
+    text-align: center; }
+  .social-stats__box {
+    background-color: #F0EFF0;
+    border: 1.3px solid #D9D9D9;
+    display: inline-block;
+    width: 80%;
+    border-radius: 5px;
+    margin: .5rem auto; }
+  .social-stats__flex {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    margin: 0 auto; }
+    .social-stats__flex img {
+      background-color: #8f81e8;
+      display: inline-block;
+      height: auto;
+      width: 70px;
+      border-radius: 50%;
+      margin: 15px; }
+  .social-stats-word {
+    color: #8f81e8;
+    font-weight: 700;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 300; }
+  .social-stats-stat {
+    font-size: 40px;
+    font-weight: 300;
+    margin: 0; }
+
+.new-members {
+  grid-area: new-members;
+  margin: .6rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .new-members h3 {
+    text-align: center; }
+  .new-members__box {
+    width: 80%;
+    border-bottom: 1px solid #DFDFDF;
+    margin: .5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .new-members__box img {
+      width: 100px;
+      height: 100px;
+      border-radius: 100px; }
+  .new-members__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+
+.recent-activity {
+  grid-area: recent-activity;
+  margin: .6rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .recent-activity h3 {
+    text-align: center; }
+  .recent-activity__box {
+    display: flex;
+    align-items: center;
+    padding: .55rem 0;
+    border-bottom: 1px solid #DFDFDF;
+    width: 80%; }
+  .recent-activity__box .user-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px; }
+  .recent-activity__box .arrow {
+    margin-left: auto; }
+  .recent-activity__text {
+    margin-left: 1rem; }
+
+.user-messages {
+  grid-area: user-messages;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column; }
+  .user-messages form {
+    display: flex;
+    flex-direction: column; }
+    .user-messages form input[type="search"] {
+      -webkit-appearance: none;
+      background-color: #f4f4f4;
+      height: 2rem;
+      border: 1px inset #e5e5e5;
+      outline: none;
+      border-radius: 10px;
+      padding: 15px; }
+    .user-messages form input[type="submit"] {
+      background-color: #8f81e8;
+      color: #fff;
+      padding: 1.3rem 0;
+      border-radius: 5px;
+      text-transform: uppercase;
+      font-weight: 300;
+      font-size: 16px;
+      cursor: pointer; }
+    .user-messages form textarea {
+      border: none;
+      outline: none;
+      padding: 1rem 1rem;
+      resize: none;
+      height: 6rem;
+      border: 1px solid #DFDFDF;
+      border-radius: 5px; }
+  .user-messages form > * {
+    margin: .3rem 0; }
+
+.settings {
+  grid-area: settings;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column; }
+  .settings > * {
+    margin: .3rem 0; }
+  .settings-widgets--email {
+    margin: .5rem 0;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap; }
+  .settings-widgets--profile {
+    margin: .5rem 0;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap; }
+  .settings select {
+    height: 2.4rem;
+    outline: none;
+    border-color: #DFDFDF;
+    background-color: #fff; }
+  .settings-btn-box {
+    width: 100%;
+    display: flex; }
+    .settings-btn-box button {
+      background-color: #8f81e8;
+      color: #fff;
+      padding: 1.3rem 0;
+      border-radius: 5px;
+      text-transform: uppercase;
+      font-weight: 300;
+      font-size: 16px;
+      width: 50%; }
+    .settings-btn-box button:first-of-type {
+      margin-right: .5rem; }
+
+.notification {
+  grid-area: notification;
+  width: 80%;
+  background-color: #8f81e8;
+  margin: 0 auto;
+  padding: 0 15px;
+  border-radius: 5px; }
+  .notification__box {
+    display: flex;
+    justify-content: space-between;
+    color: #fff; }
+  .notification .message {
+    font-size: 13px;
+    margin-left: 5px; }
+
+@media (min-width: 768px) {
+  .container {
+    grid-template-areas: 'header header header' 'sidebar dashboard dashboard' 'sidebar notification notification' 'sidebar traffic traffic' 'sidebar daily-traffic mobile-users' 'sidebar social-stats social-stats' 'sidebar new-members new-members' 'sidebar recent-activity recent-activity' 'sidebar user-messages user-messages' 'sidebar settings settings'; }
+  .sidebar__icons {
+    flex-direction: column;
+    align-items: center; }
+    .sidebar__icons img {
+      margin-top: 1rem;
+      width: 40px;
+      height: 58px; }
+  .dashboard {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-areas: 'heading search'; }
+    .dashboard h2 {
+      grid-area: heading; }
+    .dashboard span {
+      position: absolute;
+      top: 21px;
+      right: 30px; }
+    .dashboard__search {
+      grid-area: search;
+      background-color: #e5e5e5;
+      width: 100%;
+      padding-right: 1rem;
+      display: flex;
+      align-items: center; }
+      .dashboard__search input {
+        width: 50%;
+        height: 2.5rem;
+        margin-left: auto; }
+  .notification {
+    width: 97%;
+    margin-top: 10px; }
+  .daily-traffic h3 {
+    width: 80%;
+    text-align: left;
+    margin: 0 auto; }
+  .mobile-users {
+    border-left: 2px solid #f4f4f4; }
+    .mobile-users h3 {
+      text-align: left; }
+    .mobile-users__doughnut {
+      position: relative;
+      height: 100%;
+      width: 420px;
+      margin-top: .6rem; }
+  .social-stats {
+    flex-direction: column; }
+    .social-stats h3 {
+      width: 80%;
+      text-align: left;
+      margin: 0 auto; }
+    .social-stats__flex {
+      width: 280px; }
+    .social-stats__box {
+      margin: .5rem 2rem;
+      flex: 1; }
+  .social-stats__boxes {
+    flex-direction: row;
+    width: 95%;
+    margin: 0 auto; } }

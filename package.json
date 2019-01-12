@@ -1,0 +1,25 @@
+{
+  "name": "webapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "sass": "^1.16.0"
+  },
+  "devDependencies": {
+    "node-sass": "^4.11.0"
+  },
+  "scripts": {
+    "compile:sass": "node-sass scss/main.scss css/main.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justinizcool/webapp.git"
+  },
+  "author": "Justin Nguyen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/justinizcool/webapp/issues"
+  },
+  "homepage": "https://github.com/justinizcool/webapp#readme"
+}
