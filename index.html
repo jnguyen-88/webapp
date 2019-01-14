@@ -70,17 +70,17 @@
       </div>
 
     <div class="traffic">
-      <h3>Traffic</h3>
-      <div class="traffic__line-chart">
+      <div class="traffic__chart-info">
+        <h3>Traffic</h3>
         <div class="traffic__line-chart-buttons">
           <button class="btn-time hourBtn">Hourly</button>
           <button class="btn-time dailyBtn">Daily</button>
           <button class="btn-time weekBtn">Weekly</button>
           <button class="btn-time monthBtn highlight">Monthly</button>
         </div>
-        <div class="traffic__line-chart">
-          <canvas id="lineChart"></canvas>
-        </div>
+      </div>
+      <div class="traffic__line-chart">
+        <canvas id="lineChart"></canvas>
       </div>
     </div>
 
@@ -101,31 +101,27 @@
     <div class="social-stats">
       <h3>Social Stats</h3>
       <div class="social-stats__boxes">
-        <div class="social-stats__box">
-          <div class="social-stats__flex">
-            <img src="icons/icon-twitter.svg" alt="twitter icon" class="social-stats__logo">
-            <div class="social-stats__text">
-              <p class="social-stats-word">Twitter</p>
-              <p class="social-stats-stat">10,345</p>
-            </div>
+        <div class="social-stats__flex">
+          <img src="icons/icon-twitter.svg" alt="twitter icon" class="social-stats__logo">
+          <div class="social-stats__text">
+            <p class="social-stats-word">Twitter</p>
+            <p class="social-stats-stat">10,345</p>
           </div>
         </div>
-        <div class="social-stats__box">
-          <div class="social-stats__flex">
-            <img src="icons/icon-facebook.svg" alt="facebook icon" class="social-stats__logo">
-            <div class="social-stats__text">
-              <p class="social-stats-word">Facebook</p>
-              <p class="social-stats-stat">8,739</p>
-            </div>
+
+        <div class="social-stats__flex">
+          <img src="icons/icon-facebook.svg" alt="facebook icon" class="social-stats__logo">
+          <div class="social-stats__text">
+            <p class="social-stats-word">Facebook</p>
+            <p class="social-stats-stat">8,739</p>
           </div>
         </div>
-        <div class="social-stats__box">
-          <div class="social-stats__flex">
-            <img src="icons/icon-google-plus.svg" alt="google plus icon" class="social-stats__logo">
-            <div class="social-stats__text">
-              <p class="social-stats-word">Google +</p>
-              <p class="social-stats-stat">2,530</p>
-            </div>
+
+        <div class="social-stats__flex">
+          <img src="icons/icon-google-plus.svg" alt="google plus icon" class="social-stats__logo">
+          <div class="social-stats__text">
+            <p class="social-stats-word">Google +</p>
+            <p class="social-stats-stat">2,530</p>
           </div>
         </div>
       </div>
@@ -136,33 +132,41 @@
       <div class="new-members__box">
         <img src="images/member-1.jpg" alt='member 1'>
         <div class="new-members__text">
-          <p class="new-members-name">Victoria Chambers</p>
-          <p class="new-members-email">victoria@example.com</p>
+          <div class="new-members__info">
+            <p class="new-members-name">Victoria Chambers</p>
+            <p class="new-members-email">victoria@example.com</p>
+          </div>
           <span class="new-members__date">10/25/18</span>
         </div>
       </div>
       <div class="new-members__box">
         <img src="images/member-2.jpg" alt='member 2'>
         <div class="new-members__text">
-          <p class="new-members-name">Matthew Barret</p>
-          <p class="new-members-email">matthew@example.com</p>
-          <span>10/25/18</span>
+          <div class="new-members__info">
+            <p class="new-members-name">Matthew Barret</p>
+            <p class="new-members-email">matthew@example.com</p>
+          </div>
+          <span>08/25/18</span>
         </div>
       </div>
       <div class="new-members__box">
         <img src="images/member-3.jpg" alt='member 3'>
         <div class="new-members__text">
-          <p class="new-members-name">Judy Wood</p>
-          <p class="new-members-email">judy@example.com</p>
-          <span>10/25/18</span>
+          <div class="new-members__info">
+            <p class="new-members-name">Judy Wood</p>
+            <p class="new-members-email">judy@example.com</p>
+          </div>
+          <span>08/05/18</span>
         </div>
       </div>
       <div class="new-members__box">
         <img src="images/member-4.jpg" alt='member 4'>
         <div class="new-members__text">
-          <p class="new-members-name">Peter Sexton</p>
-          <p class="new-members-email">peter@example.com</p>
-          <span>10/25/18</span>
+          <div class="new-members__info">
+            <p class="new-members-name">Peter Sexton</p>
+            <p class="new-members-email">peter@example.com</p>
+          </div>
+          <span>06/17/18</span>
         </div>
       </div>
     </div>
@@ -214,22 +218,18 @@
 
     <div class="settings">
       <h3>Settings</h3>
-        <div class="settings-widgets">
-          <div class="settings-widgets--email">
-            <span>Send Email Notifications</span>
-            <label class="recent-activity__switch">
-              <input type="checkbox">
-              <span class="slider round"></span>
-            </label>
-          </div>
-          <div class="settings-widgets--profile">
-            <span>Set Profile to Public</span>
-            <label class="recent-activity__switch">
-              <input type="checkbox">
-              <span class="slider round"></span>
-            </label>
-          </div>
-        </div>
+      <div class="settings-widgets">
+          <span class="settings-email">Send Email Notifications</span>
+          <label class="send-email-switch">
+            <input type="checkbox" >
+            <span class="slider round"></span>
+          </label>
+          <span class="settings-profile">Set Profile to Public</span>
+          <label class="set-profile-switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+          </label>
+
       <select name="timezone" class="recent-activity__select">
                  <option></option>
                  <option value="Etc/GMT+12">(GMT-12:00) International Date Line West</option>
@@ -315,11 +315,12 @@
                  <option value="Pacific/Fiji">(GMT+12:00) Fiji, Kamchatka, Marshall Is.</option>
                  <option value="Pacific/Tongatapu">(GMT+13:00) Nuku'alofa</option>
       </select>
+    </div>
+
       <div class="settings-btn-box">
         <button class="btn-save">Save</button>
         <button class="btn-cancel">Cancel</button>
       </div>
-    </div>
 
   </div>
 
