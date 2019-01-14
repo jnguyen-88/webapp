@@ -176,6 +176,9 @@ input:checked + .slider:before {
   font-family: 'Open Sans', sans-serif;
   letter-spacing: 1px; }
 
+h3 {
+  font-size: 14px; }
+
 /* ===========
 Dot 
 ============ */
@@ -222,18 +225,21 @@ Close Btn
   ===================== */
 .container {
   display: grid;
-  grid-template-columns: 10% 1fr 1fr;
+  grid-template-columns: 100%;
   grid-template-rows: 1fr;
-  grid-template-areas: 'header header header' 'sidebar sidebar sidebar' 'dashboard dashboard dashboard' 'notification notification notification' 'traffic traffic traffic' 'daily-traffic daily-traffic daily-traffic' 'mobile-users mobile-users mobile-users' 'social-stats social-stats social-stats' 'new-members new-members new-members' 'recent-activity recent-activity recent-activity' 'user-messages user-messages user-messages' 'settings settings settings'; }
+  grid-template-areas: 'header' 'sidebar' 'dashboard' 'notification' 'traffic' 'daily-traffic' 'mobile-users' 'social-stats' 'new-members' 'recent-activity' 'user-messages' 'settings'; }
 
 .header {
-  padding: 1rem 1rem;
+  padding: .5rem .5rem;
   background-color: #8f81e8;
   color: #fff;
   display: flex;
   grid-area: header; }
+  .header h1 {
+    font-size: 16px; }
   .header__nav {
     margin-left: auto;
+    font-size: 12px;
     display: flex;
     align-items: center; }
     .header__nav-icon-box {
@@ -242,7 +248,7 @@ Close Btn
       display: none;
       position: absolute;
       top: 25px;
-      right: 35px;
+      left: 7px;
       z-index: 105; }
     .header__nav-icon-box img {
       width: 25px;
@@ -283,7 +289,8 @@ Close Btn
   flex-direction: column; }
   .dashboard h2 {
     padding: 1rem;
-    text-align: center; }
+    text-align: center;
+    font-size: 15px; }
   .dashboard__search {
     position: relative;
     display: inline-block;
@@ -291,7 +298,7 @@ Close Btn
     margin: 0 auto; }
     .dashboard__search input {
       width: 100%;
-      height: 3rem;
+      height: 1.5rem;
       -webkit-appearance: none;
       background-color: #f4f4f4;
       border: 1px inset #e5e5e5;
@@ -300,7 +307,7 @@ Close Btn
       padding: 15px; }
     .dashboard__search span {
       position: absolute;
-      top: 12px;
+      top: 6px;
       right: 20px; }
 
 .traffic {
@@ -322,6 +329,7 @@ Close Btn
     .traffic__line-chart-buttons {
       display: flex;
       justify-content: space-around;
+      flex-wrap: wrap;
       padding: 0 1rem; }
     .traffic__line-chart-buttons button {
       margin: .5rem; }
@@ -336,7 +344,6 @@ Close Btn
     text-align: center; }
   .daily-traffic__bar-chart {
     position: relative;
-    height: 40%;
     width: 80%;
     margin: 0 auto; }
 
@@ -392,7 +399,7 @@ Close Btn
     font-size: 14px;
     font-weight: 300; }
   .social-stats-stat {
-    font-size: 40px;
+    font-size: 25px;
     font-weight: 300;
     margin: 0; }
 
@@ -542,8 +549,10 @@ Close Btn
     display: flex;
     justify-content: space-between;
     color: #fff; }
+  .notification .alert {
+    font-size: 10px; }
   .notification .message {
-    font-size: 13px;
+    font-size: 10px;
     margin-left: 5px; }
 
 @media (min-width: 768px) {
@@ -591,8 +600,6 @@ Close Btn
       text-align: left; }
     .mobile-users__doughnut {
       position: relative;
-      height: 100%;
-      width: 420px;
       margin-top: .6rem; }
   .social-stats {
     flex-direction: column;
@@ -605,12 +612,13 @@ Close Btn
       text-align: left;
       margin: 0 auto; }
     .social-stats__flex {
-      width: 30%; }
+      width: 30%;
+      padding-left: 0; }
     .social-stats__box {
       margin: .5rem 2rem;
       flex: 1; }
     .social-stats-stat {
-      font-size: 4vw; }
+      font-size: 3vw; }
   .traffic__chart-info {
     display: flex;
     align-items: center;
@@ -672,4 +680,22 @@ Close Btn
 @media (min-width: 1024px) {
   .container {
     grid-template-columns: 10% 45% 45%;
-    grid-template-areas: 'header header header' 'sidebar dashboard dashboard' 'sidebar notification notification' 'sidebar traffic traffic' 'sidebar daily-traffic mobile-users' 'sidebar social-stats social-stats' 'sidebar new-members recent-activity' 'sidebar user-messages settings'; } }
+    grid-template-areas: 'header header header' 'sidebar dashboard dashboard' 'sidebar notification notification' 'sidebar traffic traffic' 'sidebar daily-traffic mobile-users' 'sidebar social-stats social-stats' 'sidebar new-members recent-activity' 'sidebar user-messages settings'; }
+  h3 {
+    font-size: 16px; }
+  .header {
+    padding: 1rem 1rem; }
+    .header h1 {
+      font-size: 32px; }
+  .dashboard span {
+    position: absolute;
+    top: 15px;
+    right: 30px; }
+  .dashboard h2 {
+    font-size: 16px; }
+  .notification__box .message {
+    font-size: 12px; }
+  .social-stats__flex {
+    padding-left: 30px; }
+  .settings-widgets {
+    grid-template-columns: 51% 49% 1fr; } }

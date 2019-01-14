@@ -7,6 +7,10 @@
   letter-spacing: 1px;
 }
 
+h3 {
+  font-size: 14px;
+}
+
 /* ===========
 Dot 
 ============ */
@@ -70,26 +74,27 @@ Close Btn
 .container {
 
   display: grid;
-  grid-template-columns: 10% 1fr 1fr;
+  grid-template-columns: 100%;
   grid-template-rows: 1fr;
+  // here
   grid-template-areas:
-    'header header header'
-    'sidebar sidebar sidebar'
-    'dashboard dashboard dashboard'
-    'notification notification notification'
-    'traffic traffic traffic'
-    'daily-traffic daily-traffic daily-traffic'
-    'mobile-users mobile-users mobile-users'
-    'social-stats social-stats social-stats'
-    'new-members new-members new-members'
-    'recent-activity recent-activity recent-activity'
-    'user-messages user-messages user-messages'
-    'settings settings settings'
+    'header'
+    'sidebar'
+    'dashboard'
+    'notification'
+    'traffic'
+    'daily-traffic'
+    'mobile-users'
+    'social-stats'
+    'new-members'
+    'recent-activity'
+    'user-messages'
+    'settings'
     ;
 }
 
 .header {
-  padding: 1rem 1rem;
+  padding: .5rem .5rem;
   background-color: $color-primary;
   color: #fff;
 
@@ -97,8 +102,13 @@ Close Btn
 
   grid-area: header;
 
+  & h1 {
+    font-size: 16px;
+  }
+
   &__nav {
     margin-left: auto;
+    font-size: 12px;
 
     display: flex;
     align-items: center;
@@ -112,13 +122,13 @@ Close Btn
       display: none;
       position: absolute;
       top: 25px;
-      right: 35px;
+      left: 7px;
       z-index: 105;
     }
 
     &-icon-box img {
-      width: 25px;
-      height: 25px;
+      width: 25px; 
+      height: 25px; 
       margin-right: 20px;
       cursor: pointer;
     }
@@ -178,6 +188,7 @@ Close Btn
   & h2 {
     padding: 1rem;
     text-align: center;
+    font-size: 15px;
   }
 
   &__search {
@@ -188,7 +199,7 @@ Close Btn
 
     & input {
       width: 100%;
-      height: 3rem;
+      height: 1.5rem;
       -webkit-appearance: none;
       background-color: $color-light-grey-1;
       border: 1px inset $color-light-grey-2;
@@ -199,7 +210,7 @@ Close Btn
 
     & span {
       position: absolute;
-      top: 12px;
+      top: 6px;
       right: 20px;
     }
   }
@@ -215,6 +226,7 @@ Close Btn
   & h3 {
     padding: 1rem;
     text-align: center;
+    
   }
 
   &__line-chart {
@@ -231,6 +243,7 @@ Close Btn
     &-buttons {
       display: flex;
       justify-content: space-around;
+      flex-wrap: wrap;
 
       padding: 0 1rem;
     }
@@ -255,7 +268,6 @@ Close Btn
 
   &__bar-chart {
     position: relative;
-    height: 40%;
     width: 80%;
     margin: 0 auto;
   }
@@ -332,7 +344,7 @@ Close Btn
   }
 
   &-stat {
-    font-size: 40px;
+    font-size: 25px;
     font-weight: 300;
     margin: 0;
   }
@@ -558,8 +570,12 @@ Close Btn
     color: #fff;
   }
 
+  & .alert {
+    font-size: 10px;
+  }
+
   & .message {
-    font-size: 13px;
+    font-size: 10px;
     margin-left: 5px;
   }
 }

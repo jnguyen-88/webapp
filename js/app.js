@@ -266,7 +266,8 @@ var myDoughnutChart = new Chart(atx, {
             position: 'right',
             labels: {
                 padding: 20,
-                boxWidth: 20
+                boxWidth: 20,
+                fontSize: 15
             },
         }
     }    
