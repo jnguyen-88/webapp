@@ -301,7 +301,7 @@ for(let i = 0; i < closeBtns.length; i++) {
 // Buttons
 // ============= 
 
-const sendBtn = document.querySelector('.send-btn');
+const sendBtn = document.querySelector('.btn-send');
 const searchUser = document.querySelector('.search-user');
 const msgUser = document.querySelector('.msg-user');
 
