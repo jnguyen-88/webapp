@@ -28,13 +28,15 @@ button {
   grid-area: save-button;
   width: 50%;
   margin-right: 10px;
-  padding: 1rem; }
+  height: 50px;
+  border: none; }
 
 .btn-cancel {
   grid-area: cancel-button;
   width: 50%;
   margin-left: 10px;
-  padding: 1rem; }
+  height: 50px;
+  border: none; }
 
 /* The switch - the box around the slider */
 .send-email-switch {
@@ -90,10 +92,10 @@ button {
   transition: .4s; }
 
 input:checked + .slider {
-  background-color: #2196F3; }
+  background-color: #8f81e8; }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3; }
+  box-shadow: 0 0 1px #8f81e8; }
 
 input:checked + .slider:before {
   -webkit-transform: translateX(26px);
@@ -422,6 +424,8 @@ Close Btn
     display: flex;
     flex-direction: column;
     align-items: center; }
+  .new-members-email {
+    color: #4F449C; }
 
 .recent-activity {
   grid-area: recent-activity;
@@ -457,10 +461,10 @@ Close Btn
   flex-direction: column; }
   .user-messages h3 {
     margin-bottom: 5px; }
-  .user-messages form {
+  .user-messages .message-panel {
     display: flex;
     flex-direction: column; }
-    .user-messages form input[type="search"] {
+    .user-messages .message-panel input[type="search"] {
       -webkit-appearance: none;
       background-color: #f4f4f4;
       height: 2rem;
@@ -469,7 +473,7 @@ Close Btn
       border-radius: 10px;
       padding: 15px;
       margin: .3rem 0; }
-    .user-messages form input[type="submit"] {
+    .user-messages .message-panel .btn-send {
       background-color: #8f81e8;
       color: #fff;
       border-radius: 5px;
@@ -477,8 +481,9 @@ Close Btn
       font-weight: 300;
       font-size: 16px;
       cursor: pointer;
-      padding: 1rem; }
-    .user-messages form textarea {
+      height: 50px;
+      border: none; }
+    .user-messages .message-panel textarea {
       border: none;
       outline: none;
       padding: 1rem 1rem;
@@ -501,7 +506,7 @@ Close Btn
     grid-template-columns: 45% 35% 20%;
     grid-template-areas: 'settings-email send-email-switch .' 'settings-profile set-profile-switch .' 'dropdown dropdown dropdown'; }
   .settings select {
-    height: 1.75rem;
+    height: 2.2rem;
     outline: none;
     border-color: #DFDFDF;
     background-color: #fff;
