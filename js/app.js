@@ -321,22 +321,6 @@ sendBtn.addEventListener('click', () => {
 
 
 
-// for(let i = 0; i < closeBtns.length; i++) {
-//     closeBtns[i].addEventListener('click', () => {
-//         notifications.style.backgroundColor = "pink";
-//     })
-// }
-
-
-
-
-// .addEventListener('click', () => {
-//     notifications.style.display = "none";
-// }, false);
-
-
-
-
 
 
 

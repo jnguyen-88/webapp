@@ -439,6 +439,8 @@ Close Btn
 
   &__select {
     grid-area: dropdown;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
 
 }

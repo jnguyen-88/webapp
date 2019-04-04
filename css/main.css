@@ -14,7 +14,14 @@ button {
   border-radius: 10px;
   height: 20px;
   cursor: pointer;
-  transition: all .2s; }
+  transition: all .2s;
+  box-shadow: 0 0.3rem 0.2rem rgba(0, 0, 0, 0.2); }
+  .btn-time:hover {
+    transform: translateY(-3px); }
+  .btn-time:active {
+    outline: none;
+    transform: translateY(-1px);
+    box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.2); }
 
 .highlight,
 .btn-time:hover {
@@ -459,7 +466,9 @@ Close Btn
   .recent-activity__text {
     margin-left: 1rem; }
   .recent-activity__select {
-    grid-area: dropdown; }
+    grid-area: dropdown;
+    -webkit-appearance: none;
+    -moz-appearance: none; }
 
 .user-messages {
   grid-area: user-messages;

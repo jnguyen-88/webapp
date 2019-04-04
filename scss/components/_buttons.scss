@@ -13,6 +13,17 @@ button {
   height: 20px;
   cursor: pointer;
   transition: all .2s;
+  box-shadow: 0 .3rem .2rem rgba(black,.2);
+
+  &:hover {
+    transform: translateY(-3px);
+  }
+
+  &:active {
+    outline: none;
+        transform: translateY(-1px);
+        box-shadow: 0 .3rem 1rem rgba(black,.2);
+  }
 }
 
 .highlight,
